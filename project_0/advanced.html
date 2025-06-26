@@ -11,19 +11,30 @@
         <a href="/">Back</a>
     </div>
     <div class="search-header">
-        <h2>Pesquisa avançada</h2>
+        <h2>Advanced search</h2>
     </div>
     <div class="advanced-search-field">
         <h3>Find pages with...</h3>
-        <form action="https://www.google.com/search">
+        <form class="advanced-search-form" action="https://www.google.com/search">
 
-            <label for="all-these-words">all these words:</label>
-            <input type="text" id="all-these-words" name="qs">
-            <!-- TODO https://www.google.com/advanced_search
-  https://www.google.com/webhp?as_q=&as_epq=&as_oq=&as_eq=&as_nlo=&as_nhi=&lr=&cr=&as_qdr=all&as_sitesearch=&as_occt=any&as_filetype=&tbs=
-            -->
             <div>
-                <input type="submit" class="big-text-input" value="Google Search">
+                <label for="all-these-words">all these words:</label>
+                <input type="text" id="all-these-words" name="as_q">
+            </div>
+            <div>
+                <label for="this-exact-word">this exact word or phrase:</label>
+                <input type="text" id="this-exact-word" name="as_epq">
+            </div>
+            <div>
+                <label for="any-of-these-words">any of these words:</label>
+                <input type="text" id="any-of-these-words" name="as_oq">
+            </div>
+            <div>
+                <label for="none-of-these-words">none of these words:</label>
+                <input type="text" id="none-of-these-words" name="as_eq">
+            </div>
+            <div>
+                <input type="submit" class="advanced-search-button" value="Advanced Search">
             </div>
         </form>
     </div>

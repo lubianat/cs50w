@@ -23,11 +23,26 @@ body {
     padding-left: 50px;
 }
 
+.advanced-search-button {
+    background-color: #4c8ffc;
+    color: white;
+}
+
+.advanced-search-form {
+    font-size: large;
+
+}
+
+.advanced-search-form div {
+    margin: 15px;
+}
+
 .search-header {
     padding-left: 30px;
     padding-bottom: 30pxs;
     border: 10px bottom lightgrey;
-    color: red;
+    color: #d93025;
+    font-family: Arial, sans-serif;
 }
 
 .big-text-input {
