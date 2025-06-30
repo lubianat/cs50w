@@ -8,33 +8,47 @@
 
 <body>
     <div class="navbar">
+        <h1>Foogle</h1>
         <a href="/">Back</a>
     </div>
     <div class="search-header">
-        <h2>Advanced search</h2>
+        <p>Advanced Search</p>
     </div>
+    <div class="thin-line"></div>
+    
     <div class="advanced-search-field">
-        <h3>Find pages with...</h3>
+        <p>Find pages with...</p>
         <form class="advanced-search-form" action="https://www.google.com/search">
 
+        <table>
+            <tr>
+                <tr>
+                    <td> <label for="all-these-words">all these words:</label></td>
+                    <td>                <input type="text" id="all-these-words" name="as_q"></td>
+                    
+                </tr>
+                <tr>
+                    <td> <label for="this-exact-word">this exact word or phrase:</label></td>
+                    <td><input type="text" id="this-exact-word" name="as_epq"></td>
+                </tr>
+                <tr>
+                    <td><label for="any-of-these-words">any of these words:</label></td>
+                    <td><input type="text" id="any-of-these-words" name="as_oq"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="none-of-these-words">none of these words:</label></td>
+                    <td><input type="text" id="none-of-these-words" name="as_eq"></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td class="button-holder"><input type="submit" class="advanced-search-button" value="Advanced Search"></td>
+                </tr>
+
+                </table>
             <div>
-                <label for="all-these-words">all these words:</label>
-                <input type="text" id="all-these-words" name="as_q">
-            </div>
-            <div>
-                <label for="this-exact-word">this exact word or phrase:</label>
-                <input type="text" id="this-exact-word" name="as_epq">
-            </div>
-            <div>
-                <label for="any-of-these-words">any of these words:</label>
-                <input type="text" id="any-of-these-words" name="as_oq">
-            </div>
-            <div>
-                <label for="none-of-these-words">none of these words:</label>
-                <input type="text" id="none-of-these-words" name="as_eq">
-            </div>
-            <div>
-                <input type="submit" class="advanced-search-button" value="Advanced Search">
+                
             </div>
         </form>
     </div>

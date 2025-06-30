@@ -3,14 +3,25 @@ body {
 }
 
 .navbar {
-    text-align: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Arial', sans-serif;
     padding: 15px;
     margin: 15px;
 }
 
+.navbar h1 {
+     display: inline;
+}
 .navbar a {
+    display: inline;
     margin: 5px;
+    float: right;
+    color: black;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+      text-decoration: underline;
+
 }
 
 .search-field {
@@ -18,9 +29,50 @@ body {
     padding: 30px;
 }
 
+.search-button {
+    margin:5px;
+    background-color: #f8f9fa;
+    border: 0px none;
+    outline: none;
+    border-radius: 4px;
+    color: #3c4043;
+}
+
+.search-button:hover {
+  box-shadow: 0 1px 1px rgba(0,0,0,.1);
+  border: 1px solid #dadce0;
+  color: #202124;
+}
+
+.search-header {
+    font-size: larger;
+    border: 10px bottom lightgrey;
+    color: #d93025;
+    font-family: Arial, sans-serif;
+        padding-left: 30px;
+
+}
+
+.thin-line {
+border-bottom-width: 1px;
+border-bottom-style: solid;
+border-bottom-color: rgb(235, 235, 235);
+}
+
 .advanced-search-field {
     text-align: left;
-    padding-left: 50px;
+        padding: 30px;
+
+
+}
+
+.advanced-search-field > p {
+        font-size: larger
+
+}
+
+td[class=button-holder]{
+    text-align: right;
 }
 
 .advanced-search-button {
@@ -29,21 +81,22 @@ body {
 }
 
 .advanced-search-form {
-    font-size: large;
-
+    font-size: normal;
 }
+
 
 .advanced-search-form div {
     margin: 15px;
 }
 
-.search-header {
-    padding-left: 30px;
-    padding-bottom: 30pxs;
-    border: 10px bottom lightgrey;
-    color: #d93025;
-    font-family: Arial, sans-serif;
+table tr input {
+    width: 600px;
+    height:25px;
+    margin:7px;
+    margin-left: 18px;
 }
+
+
 
 .big-text-input {
     width: 50%;
